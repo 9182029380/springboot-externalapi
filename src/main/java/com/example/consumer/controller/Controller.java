@@ -32,6 +32,10 @@ public class Controller {
 
 	@Autowired
 	Gson gson;
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Welcome to AWS Cloud";
+	}
 
 	@GetMapping("/health")
 	public String checkHealth() {
